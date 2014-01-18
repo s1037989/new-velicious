@@ -1,0 +1,8 @@
+agent - auto register - first launch, if no registratrion, register
+  agent works for itself and sends data to manager (or relay)
+  agent delivers its own SNMP to manager
+probe - agent and probe can run together, probe scans network, gathers SNMP and delivers to manager
+  each SNMP device must have its own registration
+  if a probe finds an agent, ignore it
+relay - middle man between agent and manager (do this?)
+manager - if registration not claimed wthin X time, purge
